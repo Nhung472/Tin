@@ -1,0 +1,7 @@
+.normal-wrapper { 
+    width: 900px; 
+    margin: 0 auto; 
+    padding: 15px 40px; 
+    background: red; 
+    overflow: auto;
+}

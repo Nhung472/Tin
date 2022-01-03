@@ -2,20 +2,271 @@
 <html>
 <head>
     <title>Bruno Pizzeria</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+          background-image: url('bruno.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+    </style>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+        @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+        h1, h2, h4, h5, h6 { 
+            font-family: 'PT Sans', 'Helvetica', 'Arial';
+        }
+
+        html, body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'PT Serif', 'Helvetica', 'Arial';
+        }
+        #top-bar { 
+            width: 100%; 
+            background: #07e73f; 
+            border-bottom: 1px solid #47e409; 
+            height: 25px;
+        }
+        .normal-wrapper { 
+            width: 900px; 
+            margin: 0 auto; 
+            padding: 15px 40px; 
+            background: green; 
+            overflow: auto;
+        }
+        .logo-icon { 
+            color: #910606; 
+            font-size: 60pt; 
+            float: left;
+        }
+        h1 { 
+            float: left; 
+            margin: 21px 0 0 25px;
+        }
+        #navbar { 
+            list-style-type: none; 
+            margin: 29px 0 0 0; 
+            padding: 0; float: right; 
+            font-size: 16pt;
+        }
+        #navbar li { 
+            display: inline; 
+        }
+        #navbar li a:link, #navbar li a:visited, #navbar li a:active { 
+            text-decoration: none; 
+            color: #e9810a; 
+            padding: 0 16px 0 10px; 
+            margin: 0; 
+            border-right: 2px solid #51ee43; 
+        }
+        #navbar li a:link.last-link { 
+            border-right: 0px;
+        }
+        #navbar li a:hover { 
+            color: #8fd410;
+        }
+        #top-color-splash { 
+            width: 100%; 
+            height: 4px; 
+            background: #6c0fe6;
+        }
+        .one-third { 
+            width: 40%; 
+            float: left; 
+            box-sizing: border-box; 
+            margin-top: 20px;
+        }
+        .two-third { 
+            width: 60%; 
+            float: left; 
+            box-sizing: border-box; 
+            padding-left: 40px; 
+            text-align: right; 
+            margin-top: 20px;
+        }
+        .featured-image { 
+            max-width: 500px; 
+        }
+        .no-margin-top { 
+            margin-top: 0; 
+        }
+        #quote-area { 
+            background: #f3ef0b; 
+            color: #5a2b04; 
+            text-align: center; 
+            padding: 15px 0;
+        }
+        h3 { 
+            font-weight: normal; 
+            font-size: 20pt; 
+            margin-top: 0px;
+        }
+        h4 { 
+            font-weight: normal; 
+            font-size: 16pt; 
+            margin-bottom: 0;
+        }
+        .icon-outer { 
+            box-sizing: border-box; 
+            float: left; 
+            width: 33.33%; 
+            padding: 25px; 
+            margin: 0; 
+            text-align: center;
+        }
+        .icon-circle { 
+            background: #EEEEEE; 
+            color: #B4B4B4; 
+            width: 200px; 
+            height: 200px; 
+            border-radius: 200px; 
+            margin: 0 auto; 
+            border: 2px solid #D6D6D6; 
+            box-sizing: border-box; 
+            font-size: 75pt; 
+            padding: 30px 0 0 0; 
+            cursor: pointer;
+        }
+        .icon-circle:hover { 
+            color: #FFFFFF; 
+            background: #EB6361;}
+        h5 { 
+            margin: 15px 0 10px 0; 
+            font-size: 20pt;
+        }
+        #footer { 
+            width: 100%; 
+            background: #f0b12b;
+            border-top: 1px solid #77e213;  
+            height: 150px;
+        }
+        .hidden { 
+            display: none;
+        }
+
+    </style>
+    
 </head>
 <body>
-    <h1 style="background-color:DodgerBlue;"><b>Pizza's World</b></h1>
-    <p style="background-color:Tomato;">
-        We are a restautant provide you the best pizza, 
-    </p>
-    <p style="background-color:MediumSeaGreen;">
-        <h4 style="background-color:#a0a0a0;">
+    <div id="top-bar"></div>
+    <div style="background-image: url('bruno.png');">
+    <div class="normal-wrapper">
+        <div id="logo-container"> 
+            <i class="fa fa-volume-down logo-icon"></i> <h1>Bruno Pizzeria</h1>
+            <img src="bruno.png" alt="Bruno" style="float:left;width:120px;height:120px;">
+        </div>
+        <ul id="navbar"> 
+            <li><a href="">Home</a></li> 
+            <li><a href="">Login</a></li> 
+            <li><a href="">Order</a></li> 
+            <li><a href="" class="last-link" >Review</a></li>
+        </ul>
+    </div>
+
+    <div id="top-color-splash"></div>
+
+    <div class="normal-wrapper"> 
+        <div class="one-third"> 
+            <h2 class="no-margin-top">Welcome!</h2> 
+            <p>We are a restautant provide you the best pizza</p>
+            <p>First of all a dough.  Extra fresh, fine, and as soft as you like, thanks to our local flour, custom-made by Paul Dupuis mills.
+                Then recipes...</p> 
+            <p>So tasty! PDO and PGI ingredients, and organic vegetables harvested in season in France and Italy.
+                All created by the three-time world pizza champion Thierry Graffagnino, 
+                and made with grace and precision by Pazzi, our dedicated Pizzaïobot.</p> 
+        </div> 
+
+        <div class="two-third"> 
+            <img id="f-image-1" class="featured-image" src="pi.jpg" /> 
+            <img id="f-image-2" class="featured-image hidden" src="pi2.jpg" /> 
+            <img id="f-image-3" class="featured-image hidden" src="pi3.jpg" />
+        </div>
+
+    </div>
+    <div id="quote-area"> 
+        <div class="normal-wrapper"> 
+            <h3>“The best pizza in the world”</h3> 
+            <h4>Bruno</h4> 
+        </div>
+    </div>
+
+    <div class="normal-wrapper"> 
+        <div class="icon-outer"> 
+            <div class="icon-circle"> 
+                <i class=" fa featured-image" src="seafood.jpg"></i>
+            </div> 
+            <h5>Seafood's Pizza</h5> 
+            <p>Enjoy the date</p> 
+            <p>$150</p>
+        </div>
+        <div class="icon-outer"> 
+            <div class="icon-circle">  
+                <i class="featured-image" src="family.jpg"></i> 
+            </div> 
+            <h5>Meat Pizza</h5> 
+            <p>The best choice for your family at holiday</p> 
+            <p>$200</p>
+        </div>
+        <div class="icon-outer"> 
+            <div class="icon-circle">  
+                <i class="featured-image" src="vegetarian.jpg"></i> 
+            </div> 
+            <h5>Vegetarian's Pizza</h5> 
+            <p>For vegetarian diet</p>  
+            <p>$125</p>
+         </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script type="text/javascript"> 
+        $(document).ready(function() {  
+            var time = 2500; 
+            $im1 = $('#f-image-1'); 
+            $im2 = $('#f-image-2'); 
+            $im3 = $('#f-image-3');
+
+            setInterval(function(){  
+                changeImage(); }, 
+            time);
+            
+            var currentImage = 1;
+
+            function changeImage(){ 
+                switch(currentImage) { 
+                    case 1:  
+                        $im1.hide(); 
+                        $im2.show(); 
+                        $im3.hide(); 
+                        currentImage = 2; 
+                        break; 
+                    case 2: 
+                        $im1.hide(); 
+                        $im2.hide(); 
+                        $im3.show(); 
+                        currentImage = 3; 
+                        break; 
+                    default: 
+                        $im1.show(); 
+                        $im2.hide(); 
+                        $im3.hide(); 
+                        currentImage = 1; 
+                } 
+            }
+        });
+    </script>
+    <div class="normal-wrapper">
         If you have any problem, contact us: <br>
         Email: 20070866@vnu.edu.vn or ... @vnu.edu.vn <br>
         Phone: 0984129819 or ... 
         Address: ... 
         </h4>
     </p>
+    </div>
 
 
 </body>
